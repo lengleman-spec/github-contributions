@@ -22,6 +22,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(52, 1fr);
   background: var(--graph-bg);
+  padding: 1em;
 }
 
 .square {
@@ -31,4 +32,17 @@ ul {
   margin: 3px;
   margin-right: 0;
   border-radius: 2px;
+}
+
+/* Below is saying every element that has a data-value equal to 3, change the background color to X. */
+[data-value="3"] {
+  background: var(--level3);
+}
+
+[data-value="5"] {
+  background: var(--level5);
+}
+
+[data-value="10"] {
+  background: var(--level10);
 }
